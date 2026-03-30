@@ -16,7 +16,7 @@ void RATGDOOutput::setup()
 #ifdef RATGDO_USE_VEHICLE_SENSORS
         this->parent_->subscribe_vehicle_arriving_state([this](VehicleArrivingState state) {
             if (state == VehicleArrivingState::YES) {
-                this->play();
+//              this->play();
             }
         });
 #endif
